@@ -1,0 +1,90 @@
+/* Container for the project cards */
+.cards-holder {
+  display: flex;
+  flex-wrap: wrap; /* Ensures the cards wrap onto the next line */
+  gap: 20px; /* Space between the cards */
+  justify-content: space-between; /* Evenly spaces out the cards */
+}
+
+/* Individual project card */
+.project-card {
+  background-color: rgb(209, 205, 236);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(138, 22, 22, 0.1);
+  width: calc(50% - 20px); /* Sets two cards per row, with a gap in between */
+  margin-bottom: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect on project cards */
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Title and content styling */
+.project-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+/* Styling for the unordered list */
+.project-card ul {
+  list-style-type: disc; /* Makes list items appear with bullet points */
+  padding-left: 20px; /* Adds indentation to the list */
+  text-align: left; /* Aligns the text to the left */
+  font-size: 1.125rem;
+  color: #333; /* Makes the text dark enough to be visible */
+  margin: 0; /* Removes default margin */
+}
+
+.project-card ul li {
+  margin-bottom: 5px; /* Adds some space between list items */
+}
+
+/* Buttons styling */
+.project-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+/* Styling for the website and know more buttons */
+.website, .know-more {
+  padding: 1.25rem;
+  font-size: 1.25rem;
+  background-color: rgb(138, 22, 22, 0.7);
+  border: 4px solid rgb(138, 22, 22);
+  color: white;
+  border-radius: 1rem;
+  border: none;
+  width: 180px; /* Increase the width of buttons */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none; /* Removes the default underline from links */
+  text-align: center; /* Ensures text is centered in the link */
+}
+
+/* Hover effect for the buttons */
+.website:hover, .know-more:hover {
+  background-color: #333333;
+  color: white; /* Prevent text color change */
+}
+
+/* Ensure the anchor tags behave like buttons */
+.project-btns a {
+  display: inline-flex; /* Make anchor tags behave like block elements */
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 50px;
+  text-decoration: none; /* Ensures there's no underline */
+  border-radius: 1rem;
+  color: inherit; /* Inherit color from the parent */
+}
