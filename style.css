@@ -420,3 +420,106 @@ body {
 }
 
 
+/* Media Queries for Responsive Design */
+
+/* Small Devices (Mobile Phones) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .projects-section h2 {
+    font-size: 2rem;
+  }
+
+  .cards-holder {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .contact-section {
+    padding: 20px;
+    height: auto;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 15px;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .about-section {
+    padding: 30px;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .contact-section {
+    padding: 30px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1024px) {
+  .about-section {
+    max-width: 1200px;
+    padding: 50px;
+  }
+
+  .projects-section {
+    max-width: 1200px;
+  }
+
+  .contact-section {
+    max-width: 700px;
+    padding: 50px;
+  }
+}
+
+

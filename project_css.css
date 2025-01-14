@@ -88,3 +88,45 @@
   border-radius: 1rem;
   color: inherit; /* Inherit color from the parent */
 }
+
+
+@media (max-width: 768px) {
+  .cards-holder {
+    gap: 10px; /* Reduce spacing for smaller screens */
+    justify-content: center; /* Center cards on smaller screens */
+  }
+
+  .project-card {
+    width: 90%; /* Single card per row */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .project-card h3 {
+    font-size: 1.5rem; /* Slightly smaller heading */
+  }
+
+  .project-card ul {
+    font-size: 1rem; /* Adjust list text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-holder {
+    gap: 5px; /* Less gap between cards */
+  }
+
+  .project-card {
+    width: 100%; /* Full width on small screens */
+    padding: 15px;
+  }
+
+  .project-btns {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+  }
+
+  .website, .know-more {
+    width: 100%; /* Full-width buttons */
+    font-size: 1rem; /* Smaller font */
+  }
+}
